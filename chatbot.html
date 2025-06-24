@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="chatbot.js"></script>
+</head>
+<body>
+    </div>
+<div id="chatbot-container">
+<!-- Chatbot container (copied from chatbot.html) -->
+  <button class="chat-button" id="chatButton">
+    <svg viewBox="0 0 24 24">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 
+                 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+    </svg>
+  </button>
+
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+      <h3> Virutal Labs Smart Assistant</h3>
+      <button class="refresh-btn" id="refreshBtn" title="Refresh Chat">
+        <svg viewBox="0 0 24 24">
+          <!-- simple “↻” icon -->
+          <path d="M12 4V1L8 5l4 4V6c3.86 0 7 3.14 7 7 0 .34-.03.67-.08 1h2.02c.05-.33.06-.66.06-1 0-4.97-4.03-9-9-9zm-7 7c0-.34.03-.67.08-1H2.06c-.05.33-.06.66-.06 1 0 4.97 4.03 9 9 9v3l4-4-4-4v3c-3.86 0-7-3.14-7-7z"></path>
+        </svg>
+      </button>
+      <button class="close-btn" id="closeBtn">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="welcome-screen" id="welcomeScreen">
+        <h4>Welcome to Virtual Labs!</h4>
+        <p>I'm here to help you with experiments. What topic would you like to explore?</p>
+        <div class="experience-buttons" id="experienceButtons">
+      <button class="experience-btn" onclick="setUserExperience(false)">I'm new.</button>
+      <button class="experience-btn" onclick="setUserExperience(true)">I'm experienced.</button>
+    </div>
+        <div id="newUserDropdownContainer"></div>
+      </div>
+      <div class="typing-indicator" id="typingIndicator">
+        <div class="typing-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type your message..." disabled>
+      <button class="mic-btn" id="micBtn" title="Hold to Speak">
+        <svg viewBox="0 0 24 24"><path
+        d="M12 14a3 3 0 003-3V5a3 3 0 00-6 0v6a3 3 0 003 3zm5-3a5 5 0 01-10 0H5a7 7 0 0014 0h-2zm-5 9a7.5 7.5 0 01-7.478-6.615L4 13h2a5.5 5.5 0 0011 0h2l-.522 3.385A7.5 7.5 0 0112 20z"
+      /></svg>
+      </button>
+      <button class="send-btn" id="sendBtn" disabled>
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
