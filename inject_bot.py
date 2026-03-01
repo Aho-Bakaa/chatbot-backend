@@ -1,13 +1,12 @@
-#!/usr/bin/env python3
 import os
 import shutil
 from bs4 import BeautifulSoup
 
-BASE_DIR     = r"C:\Users\anmol\OneDrive\Desktop"
+BASE_DIR= r"C:\Users\anmol\OneDrive\Desktop"
 
-ASSETS_DIR   = r"C:\Users\anmol\OneDrive\Desktop\chatbot"
+ASSETS_DIR= r"C:\Users\anmol\OneDrive\Desktop\chatbot"
 
-SNIPPET_PATH = os.path.join(ASSETS_DIR, "chatbot.html")
+SNIPPET_PATH= os.path.join(ASSETS_DIR, "chatbot.html")
 
 ASSET_FILES = ["chatbot.js", "chatbot.css"]  
 
@@ -39,4 +38,5 @@ for root, dirs, files in os.walk(BASE_DIR):
             f.write(str(soup))
 
 print(" Finished injecting chatbot into all simulation/index.html files.")
+
 
