@@ -1,14 +1,12 @@
-/* ─── CHAT BOT (FIXED STYLING) ────────────────────────────────────────────── */
 
-/* 1) Style & pin the chat‐button to bottom‐right corner */
 .chat-button {
   position: fixed;           
-  bottom: 30px;              /* slightly above the very bottom */
-  right: 40px;               /* slightly away from the right edge */
+  bottom: 30px;         
+  right: 40px;
   z-index: 1002;             
 
   background: #667eea;
-  width: 60px;               /* make it a perfect circle */
+  width: 60px;             
   height: 60px;
   border: none;
   border-radius: 50%;
@@ -159,7 +157,7 @@
   background: #667eea;
   border: none;
   border-radius: 50%;
-  width: 36px;              /* slightly smaller circle */
+  width: 36px;           
   height: 36px;
   cursor: pointer;
   display: flex;
@@ -179,7 +177,7 @@
   cursor: not-allowed;
 }
 
-/* 8) SVG inside send & mic */
+
 .send-btn svg,
 .mic-btn svg {
   width: 16px;
@@ -187,7 +185,6 @@
   fill: white;
 }
 
-/* 9) Mic “recording” animation */
 @keyframes mic-pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
@@ -202,7 +199,7 @@
 
 .mic-btn.recording {
   animation: mic-pulse 1s infinite ease-out;
-  color: red; /* icon stays white via SVG fill */
+  color: red;
 }
 
 .welcome-screen {
@@ -259,7 +256,6 @@
   color: white;
 }
 
-/* 11) Typing indicator */
 .typing-indicator {
   display: none;
   padding: 8px 12px;
@@ -291,10 +287,9 @@
   40% { transform: scale(1); opacity: 1; }
 }
 
-/* 12) Mobile responsiveness (slightly adjusted to new dimensions) */
 @media (max-width: 480px) {
   .chat-popup {
-    width: calc(100vw - 32px);   /* leave small horizontal margin */
+    width: calc(100vw - 32px); 
     height: calc(100vh - 140px);
     bottom: 80px;
     right: 16px;
@@ -313,8 +308,7 @@
     height: 24px;
   }
 }
-/* ────────────────────────────────────────────────────────────────────────── */
-/* 3.x) Styles for “new user” question dropdown */
+
 #newUserDropdownContainer {
   margin-top: 12px;
 }
@@ -327,18 +321,16 @@
   border-radius: 4px;
 }
 
-/* Optional: style the default “Select a question…” option */
+
 #newUserDropdown option[value=""] {
   color: #888;
 }
-/* ────────────────────────────────────────────────────────────────────────── */
-/* 3.x) Hideable “experience-buttons” container */
+
 #experienceButtons {
   margin-top: 8px;
 }
 
-/* ────────────────────────────────────────────────────────────────────────── */
-/* 3.x) Styles for “new user” question dropdown */
+
 #newUserDropdownContainer {
   margin-top: 12px;
 }
@@ -351,9 +343,9 @@
   border-radius: 4px;
 }
 
-/* Optional: style the default “Select a question…” option */
 #newUserDropdown option[value=""] {
   color: #888;
 }
+
 
 
