@@ -1,6 +1,6 @@
 # Chatbot  🤖
 
-Welcome to the repository for my first-ever chatbot! This project represents a complete, full-stack implementation of a conversational interface, built from scratch. It features a robust Python backend and a lightweight, highly customizable vanilla web frontend.
+Welcome to my first-ever chatbot! This project represents a complete, full-stack implementation of a conversational interface, built from scratch. It features a robust Python backend and a lightweight, highly customizable vanilla web frontend.
 
 ## 🚀 Overview
 
