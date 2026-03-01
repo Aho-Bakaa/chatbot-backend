@@ -46,7 +46,7 @@ class ExtractionResponse(BaseModel):
     questions: List[str]
 with open("aim.md", "r", encoding="utf-8") as f:
     AIM_CONTENT = f.read()
-genai.configure(api_key="AIzaSyABEoJi0SpQrt7iVXKMnyklgnGWXx31sew")
+genai.configure(api_key="NICE_TRY")
 class ChatMessage(BaseModel):
     role: str      
     content: str    
@@ -100,7 +100,7 @@ async def chat_endpoint(req: ChatRequest):
         return { "response": gemini_resp.text }
 
     except Exception as e:
-        # If the Gemini API fails for any reason, return an error string
+
         return { "response": f"Error from Gemini API: {str(e)}" }
     
     
@@ -122,16 +122,14 @@ Aim:
     extraction_chat = model.start_chat()
     extraction_resp = extraction_chat.send_message(extract_prompt).text
 
-    # parse the JSON array (simple eval; in production use json.loads)
+
     try:
         phrases = json.loads(extraction_resp)
     except:
-        # fallback: split on newlines
+        
         phrases = [line.strip("- ").strip() 
                    for line in extraction_resp.splitlines() if line.strip()]
 
-    # 2) Question-generation prompt
-    # Build a prompt that feeds back those phrases
     qgen_prompt = f"""
 I have these key phrases from an experiment:
 
@@ -150,3 +148,4 @@ Return as a flat JSON array of strings.
                      for line in qgen_resp.splitlines() if line.strip()]
 
     return {"phrases": phrases, "questions": questions}
+
