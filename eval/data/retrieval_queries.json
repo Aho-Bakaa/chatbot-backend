@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "description": "Retrieval quality test set: 18 queries with gold chunk ids from app/rag/corpus.py. Gold chunks contain the information needed to answer the query.",
+    "n_queries": 18,
+    "top_k": 3
+  },
+  "queries": [
+    {"id": "r01", "query": "What should I wear in the lab?", "gold_chunks": ["ppe"]},
+    {"id": "r02", "query": "How do I dilute concentrated sulfuric acid?", "gold_chunks": ["acid-base"]},
+    {"id": "r03", "query": "What do I do if acid splashes in my eye?", "gold_chunks": ["eyewash-shower"]},
+    {"id": "r04", "query": "How do I extinguish a paper fire in the lab?", "gold_chunks": ["fire-safety"]},
+    {"id": "r05", "query": "What are the sections of an SDS?", "gold_chunks": ["sds"]},
+    {"id": "r06", "query": "How do I dispose of broken beakers?", "gold_chunks": ["glassware"]},
+    {"id": "r07", "query": "How long do I autoclave waste for sterilization?", "gold_chunks": ["autoclave"]},
+    {"id": "r08", "query": "How do I balance the centrifuge before a run?", "gold_chunks": ["centrifuge"]},
+    {"id": "r09", "query": "Can I wear sandals in the lab?", "gold_chunks": ["ppe"]},
+    {"id": "r10", "query": "Where should volatile solvents be handled?", "gold_chunks": ["fume-hood"]},
+    {"id": "r11", "query": "How do I store hydrogen gas cylinders?", "gold_chunks": ["gas-cylinders"]},
+    {"id": "r12", "query": "What temperature does a soldering iron reach?", "gold_chunks": ["soldering"]},
+    {"id": "r13", "query": "Which laser class can burn skin?", "gold_chunks": ["laser-safety"]},
+    {"id": "r14", "query": "How do I clean an oil immersion microscope lens?", "gold_chunks": ["microscope"]},
+    {"id": "r15", "query": "How do I clean up a small acid spill?", "gold_chunks": ["chemical-spills", "acid-base"]},
+    {"id": "r16", "query": "Where should chemical waste go after an experiment?", "gold_chunks": ["waste-disposal"]},
+    {"id": "r17", "query": "How do I start a titration?", "gold_chunks": ["titration"]},
+    {"id": "r18", "query": "What do I do for a thermal burn in the lab?", "gold_chunks": ["first-aid"]}
+  ]
+}

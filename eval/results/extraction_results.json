@@ -1,0 +1,1430 @@
+{
+  "meta": {
+    "description": "Extraction / question-generation test set: 12 experiment aims drawn from typical Virtual Labs experiments (electronics, optics, mechanics, fluids, materials).",
+    "n_aims": 12,
+    "num_phrases": 5,
+    "num_questions_per_phrase": 3
+  },
+  "summary": {
+    "mock_mode": false,
+    "n_aims": 12,
+    "endpoint_errors": 0,
+    "judged_aims": 12,
+    "phrase_relevance": 0.8833,
+    "question_relevance": 0.8028,
+    "question_non_redundancy": 0.9139,
+    "question_difficulty": 0.7333,
+    "mean_phrase_count": 5.0,
+    "mean_question_count": 15.0,
+    "json_fallback_rate_phrases": 0.0,
+    "json_fallback_rate_questions": 0.0,
+    "json_fallback_count_phrases": 0,
+    "json_fallback_count_questions": 0
+  },
+  "rows": [
+    {
+      "id": "a01",
+      "status": 200,
+      "phrases": [
+        "common-emitter amplifier",
+        "voltage gain",
+        "input impedance",
+        "output impedance",
+        "function of frequency"
+      ],
+      "questions": [
+        "What is the basic configuration of a common-emitter amplifier and how are the transistor terminals connected?",
+        "How does a common-emitter amplifier invert the output signal relative to the input?",
+        "Why does the common-emitter stage provide high voltage gain compared to other configurations?",
+        "How is voltage gain defined for an amplifier and what does it tell us about the output signal?",
+        "What factors determine the voltage gain of a common-emitter amplifier?",
+        "Can voltage gain be greater than one, and what does that imply for signal amplification?",
+        "What does input impedance represent in an amplifier circuit?",
+        "How does the input impedance of a common-emitter stage affect the source that drives it?",
+        "Why is a high input impedance generally desirable for the first stage of a signal chain?",
+        "What does output impedance describe for an amplifier?",
+        "How does the output impedance of a common-emitter amplifier influence the load it can drive?",
+        "Why is a low output impedance preferred when connecting an amplifier to a speaker or next stage?",
+        "What does the term 'function of frequency' refer to in the context of amplifier performance?",
+        "How does the gain of a common-emitter amplifier change with frequency?",
+        "Why do capacitive and inductive elements cause an amplifier’s behavior to vary across different frequencies?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 3, 3],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 1},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 1
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "a02",
+      "status": 200,
+      "phrases": [
+        "Ohm's law",
+        "resistance",
+        "given wire",
+        "voltmeter",
+        "ammeter"
+      ],
+      "questions": [
+        "What does Ohm's law state about the relationship between voltage, current, and resistance?",
+        "How can I use Ohm's law to calculate the current if I know the voltage and resistance?",
+        "If I double the voltage across a resistor, how does the current change according to Ohm's law?",
+        "What is resistance and how does it affect the flow of electric current?",
+        "How is resistance measured and what units is it expressed in?",
+        "Why do materials with higher resistance produce less current for the same voltage?",
+        "What does the term 'given wire' refer to in a circuit problem?",
+        "How do I determine the length and cross‑sectional area of a given wire for calculations?",
+        "Why is the material of a given wire important when calculating its resistance?",
+        "What is the purpose of a voltmeter in an electrical circuit?",
+        "How should a voltmeter be connected to correctly measure voltage across a component?",
+        "Why does a voltmeter have a high internal resistance compared to other instruments?",
+        "What does an ammeter measure in a circuit?",
+        "How must an ammeter be connected to accurately measure current flow?",
+        "Why is it important that an ammeter has a low internal resistance?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 2, 2, 2],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 1},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 1},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 1},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 1
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 1
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 1
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a03",
+      "status": 200,
+      "phrases": [
+        "wavelength",
+        "sodium light",
+        "Newton's rings",
+        "Newton's rings apparatus",
+        "determine wavelength"
+      ],
+      "questions": [
+        "What does the term 'wavelength' refer to in a light wave?",
+        "How is wavelength measured and what are its typical units?",
+        "Why does wavelength affect the color of visible light?",
+        "What is sodium light and how is it produced?",
+        "What are the characteristic wavelengths emitted by a sodium lamp?",
+        "Why is sodium light often used in optical experiments?",
+        "What are Newton's rings and how are they formed?",
+        "How does the pattern of Newton's rings change with the thickness of the air film?",
+        "What information can be obtained by analyzing Newton's rings?",
+        "What components make up a Newton's rings apparatus?",
+        "How does the curvature of the glass lens affect the Newton's rings pattern?",
+        "Why must the glass surfaces be clean and flat in a Newton's rings setup?",
+        "What steps are involved in determining the wavelength using Newton's rings?",
+        "How does measuring the ring diameters help calculate the wavelength?",
+        "What sources of error should be considered when determining wavelength with this method?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 3, 3],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "a04",
+      "status": 200,
+      "phrases": [
+        "acceleration due to gravity",
+        "compound pendulum",
+        "measure",
+        "gravity",
+        "pendulum"
+      ],
+      "questions": [
+        "What is the numerical value of the acceleration due to gravity near Earth's surface?",
+        "Why does the acceleration due to gravity act downward on all objects?",
+        "How does the acceleration due to gravity differ on other planets compared to Earth?",
+        "What distinguishes a compound pendulum from a simple pendulum?",
+        "How do you calculate the period of a compound pendulum?",
+        "What factors affect the motion of a compound pendulum?",
+        "What does it mean to measure a physical quantity in an experiment?",
+        "Which tools can be used to measure the length of a pendulum accurately?",
+        "How can you ensure that your measurements are reliable and repeatable?",
+        "What is the force that attracts objects toward each other called?",
+        "How does gravity influence the motion of falling objects?",
+        "Why does gravity vary slightly at different locations on Earth?",
+        "What is a pendulum and how does it move?",
+        "What determines the period of a simple pendulum?",
+        "How does the length of a pendulum affect its swing speed?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 2, 2, 2],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 1},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 1, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 1
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "a05",
+      "status": 200,
+      "phrases": [
+        "V-I characteristics",
+        "PN junction diode",
+        "forward bias",
+        "reverse bias",
+        "V-I"
+      ],
+      "questions": [
+        "What does a V‑I characteristic curve represent for an electronic component?",
+        "How can I identify the different regions on a V‑I characteristic graph?",
+        "Why is the slope of the V‑I characteristic important for understanding resistance?",
+        "What is a PN junction diode and how is it constructed?",
+        "How does a PN junction diode allow current to flow in one direction only?",
+        "What role does the depletion region play in a PN junction diode?",
+        "What does forward bias mean for a diode?",
+        "How does forward bias affect the voltage across a PN junction diode?",
+        "Why does a diode conduct more current when it is forward biased?",
+        "What is reverse bias in the context of a diode?",
+        "How does reverse bias change the width of the depletion region?",
+        "Why does a diode allow only a tiny leakage current when reverse biased?",
+        "What does the term V‑I refer to in electronics?",
+        "How are voltage (V) and current (I) related in a circuit element?",
+        "Why do we plot V‑I curves to analyze component behavior?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 3, 3],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a06",
+      "status": 200,
+      "phrases": [
+        "coefficient of viscosity",
+        "coefficient of viscosity of water",
+        "Poiseuille's method",
+        "capillary tube",
+        "viscosity of water"
+      ],
+      "questions": [
+        "What does the term 'coefficient of viscosity' represent in fluid dynamics?",
+        "How is the coefficient of viscosity measured experimentally?",
+        "Why is the coefficient of viscosity important for describing fluid flow?",
+        "What is the typical value of the coefficient of viscosity for water at room temperature?",
+        "How does temperature affect the coefficient of viscosity of water?",
+        "Why is the coefficient of viscosity of water often used as a reference in experiments?",
+        "What principle does Poiseuille's method rely on to determine fluid viscosity?",
+        "How is Poiseuille's method applied using a capillary tube?",
+        "What assumptions are made when using Poiseuille's method for viscosity measurements?",
+        "What is a capillary tube and how is it used in fluid experiments?",
+        "Why does the diameter of a capillary tube affect fluid flow rate?",
+        "How does the length of a capillary tube influence the measurement of viscosity?",
+        "What does the phrase 'viscosity of water' refer to in scientific terms?",
+        "How does the viscosity of water change with temperature?",
+        "Why is water commonly chosen as a standard fluid for viscosity studies?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 3, 2],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 2, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 2,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a07",
+      "status": 200,
+      "phrases": [
+        "laws of series",
+        "parallel combination",
+        "series combination",
+        "resistors",
+        "multimeter"
+      ],
+      "questions": [
+        "What does the law of series state about the total resistance in a series circuit?",
+        "How does the voltage divide across components in a series circuit according to the laws of series?",
+        "Why does the current remain the same through each component in a series connection?",
+        "How do you calculate the equivalent resistance of two resistors in parallel?",
+        "What happens to the total current when more resistors are added in parallel?",
+        "Why does the voltage across each branch in a parallel circuit stay the same?",
+        "How do you find the total resistance when resistors are connected end‑to‑end in series?",
+        "What effect does adding another resistor in series have on the overall current?",
+        "Why does the same current flow through all components in a series circuit?",
+        "What is a resistor and what role does it play in an electric circuit?",
+        "How does the resistance value of a resistor affect the current according to Ohm’s law?",
+        "What are the color bands on a resistor used for?",
+        "What does a multimeter measure when set to the resistance (Ω) mode?",
+        "How do you use a multimeter to check if a battery is still good?",
+        "What safety precautions should you take when using a multimeter on a live circuit?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 3, 3],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 1, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 1,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a08",
+      "status": 200,
+      "phrases": [
+        "Hall effect",
+        "semiconductor",
+        "Hall coefficient",
+        "carrier concentration",
+        "Hall effect in semiconductor"
+      ],
+      "questions": [
+        "What physical phenomenon does the Hall effect describe?",
+        "How is the Hall voltage generated in a conductor?",
+        "Why does the direction of the Hall voltage depend on the type of charge carriers?",
+        "What defines a semiconductor material?",
+        "How does a semiconductor differ from a conductor and an insulator?",
+        "What role do dopants play in semiconductor behavior?",
+        "What does the Hall coefficient measure in a material?",
+        "How is the Hall coefficient related to the type of charge carriers?",
+        "Why can the Hall coefficient be positive or negative?",
+        "What is carrier concentration in a semiconductor?",
+        "How is carrier concentration related to electrical conductivity?",
+        "Why is knowing the carrier concentration important for device performance?",
+        "How does the Hall effect help determine properties of a semiconductor?",
+        "What information can be obtained by measuring the Hall effect in a semiconductor?",
+        "Why is the Hall effect particularly useful for characterizing semiconductor materials?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 3, 3],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "a09",
+      "status": 200,
+      "phrases": [
+        "calibrate thermocouple",
+        "thermocouple",
+        "unknown temperatures",
+        "determine temperature",
+        "temperature measurement"
+      ],
+      "questions": [
+        "How do I properly calibrate a thermocouple before using it?",
+        "What steps are involved in calibrating a thermocouple?",
+        "Why is calibration important for accurate thermocouple readings?",
+        "What is a thermocouple and how does it work?",
+        "What materials are commonly used in thermocouples?",
+        "How does a thermocouple generate a voltage related to temperature?",
+        "How can I identify an unknown temperature using a sensor?",
+        "What methods help determine temperatures that are not directly measurable?",
+        "Why might I encounter unknown temperatures in an experiment?",
+        "What techniques can I use to determine temperature accurately?",
+        "How does a thermometer determine temperature?",
+        "What factors affect the precision when determining temperature?",
+        "What is temperature measurement in scientific experiments?",
+        "How is temperature measurement performed with different instruments?",
+        "Why is consistent temperature measurement important in research?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 2, 2],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a10",
+      "status": 200,
+      "phrases": [
+        "Young's modulus",
+        "Searle's apparatus",
+        "wire",
+        "determine",
+        "experimental aim"
+      ],
+      "questions": [
+        "What does Young's modulus represent in material science?",
+        "How is Young's modulus calculated from stress and strain data?",
+        "Why is Young's modulus important when comparing different materials?",
+        "What is the purpose of Searle's apparatus in a physics experiment?",
+        "How does Searle's apparatus measure the extension of a wire?",
+        "What components make up Searle's apparatus and how do they work together?",
+        "What type of wire is typically used in a Young's modulus experiment?",
+        "How does the material of the wire affect its measured Young's modulus?",
+        "What safety precautions should be taken when handling the wire in the experiment?",
+        "What steps are involved in determining Young's modulus from experimental data?",
+        "How do you use the slope of a stress‑strain graph to find Young's modulus?",
+        "What sources of error can affect the determination of Young's modulus?",
+        "What is the main experimental aim when measuring Young's modulus of a wire?",
+        "Why do we aim to find Young's modulus in this experiment?",
+        "How does achieving the experimental aim help us understand material properties?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 2, 2],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 1, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 1,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a11",
+      "status": 200,
+      "phrases": [
+        "low-pass RC filter",
+        "frequency response",
+        "cutoff frequency",
+        "RC filter",
+        "low-pass"
+      ],
+      "questions": [
+        "What is the purpose of a low-pass RC filter in a circuit?",
+        "How does a low-pass RC filter affect signals with frequencies above its cutoff?",
+        "Which components make up a low-pass RC filter and how are they connected?",
+        "What does the term 'frequency response' describe for an electronic filter?",
+        "How can the frequency response of a circuit be visualized on a graph?",
+        "Why is the frequency response important when designing signal processing systems?",
+        "What defines the cutoff frequency of a filter?",
+        "How is the cutoff frequency related to the -3 dB point in a filter's response?",
+        "What happens to signal amplitudes at frequencies above the cutoff frequency?",
+        "What components are included in an RC filter?",
+        "How does changing the resistor or capacitor values affect an RC filter's behavior?",
+        "In what applications are RC filters commonly used?",
+        "What does the term 'low-pass' indicate about a filter's behavior?",
+        "How does a low-pass filter differ from a high-pass filter?",
+        "Why might you choose a low-pass filter for smoothing a signal?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 2, 2],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 2, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 1, \"non_redundancy\": 3, \"difficulty\": 1},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 2,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 1,
+            "non_redundancy": 3,
+            "difficulty": 1
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a12",
+      "status": 200,
+      "phrases": [
+        "magnetic susceptibility",
+        "paramagnetic salt",
+        "Quincke's method",
+        "susceptibility measurement",
+        "magnetic susceptibility determination"
+      ],
+      "questions": [
+        "What does the term magnetic susceptibility describe in a material?",
+        "How is magnetic susceptibility quantitatively defined?",
+        "What does a high magnetic susceptibility value indicate about a substance?",
+        "What characterizes a paramagnetic salt compared to other salts?",
+        "Why does a paramagnetic salt exhibit paramagnetism?",
+        "Can you name a common example of a paramagnetic salt used in experiments?",
+        "What is Quincke's method primarily used to measure?",
+        "How does Quincke's method determine magnetic susceptibility?",
+        "What apparatus is essential for performing Quincke's method?",
+        "What steps are involved in a typical susceptibility measurement?",
+        "Which units are commonly used to express magnetic susceptibility?",
+        "What experimental factors can affect the accuracy of susceptibility measurements?",
+        "How is magnetic susceptibility determination carried out in the laboratory?",
+        "What data must be collected to calculate magnetic susceptibility?",
+        "Why is determining magnetic susceptibility important for material characterization?"
+      ],
+      "phrases_fallback": false,
+      "questions_fallback": false,
+      "judge_raw": "{\n  \"phrase_scores\": [3, 3, 3, 2, 3],\n  \"question_scores\": [\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 3, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 2},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 3, \"non_redundancy\": 1, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3},\n    {\"relevance\": 2, \"non_redundancy\": 3, \"difficulty\": 3}\n  ]\n}",
+      "scores": {
+        "phrase_scores": [
+          3,
+          3,
+          3,
+          2,
+          3
+        ],
+        "question_scores": [
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 2
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 3,
+            "non_redundancy": 1,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          },
+          {
+            "relevance": 2,
+            "non_redundancy": 3,
+            "difficulty": 3
+          }
+        ]
+      }
+    }
+  ]
+}

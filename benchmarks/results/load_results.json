@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-09-13T16:00:53+0530",
+  "method": "uvicorn subprocess on 127.0.0.1; app-layer rows use BENCHMARK_BYPASS_LLM=true (deterministic response after rate limit + retrieval + logging); real e2e rows include the LLM round trip.",
+  "concurrency_levels": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "requests_per_worker": 20,
+  "rows": [
+    {
+      "label": "retrieval=on c=1",
+      "requests_200": 20,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 128.8868999999977,
+      "p95_ms": 208.37200000096345,
+      "p99_ms": 213.96610000010696,
+      "mean_ms": 129.69,
+      "n_latencies": 20,
+      "throughput_req_s": 7.65
+    },
+    {
+      "label": "retrieval=on c=5",
+      "requests_200": 100,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 627.8456000000006,
+      "p95_ms": 810.6626000007964,
+      "p99_ms": 874.1572999988421,
+      "mean_ms": 610.44,
+      "n_latencies": 100,
+      "throughput_req_s": 7.98
+    },
+    {
+      "label": "retrieval=on c=10",
+      "requests_200": 200,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 1224.8593999993318,
+      "p95_ms": 1438.9400000000023,
+      "p99_ms": 1445.0440000000526,
+      "mean_ms": 1208.63,
+      "n_latencies": 200,
+      "throughput_req_s": 8.09
+    },
+    {
+      "label": "retrieval=on c=25",
+      "requests_200": 500,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 11845.994400000563,
+      "p95_ms": 19217.777699999715,
+      "p99_ms": 19327.288200000112,
+      "mean_ms": 10803.88,
+      "n_latencies": 500,
+      "throughput_req_s": 2.27
+    },
+    {
+      "label": "retrieval=off c=1",
+      "requests_200": 20,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 8.19499999852269,
+      "p95_ms": 15.241999999489053,
+      "p99_ms": 15.39760000014212,
+      "mean_ms": 9.19,
+      "n_latencies": 20,
+      "throughput_req_s": 93.7
+    },
+    {
+      "label": "retrieval=off c=5",
+      "requests_200": 100,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 26.271499998983927,
+      "p95_ms": 61.18890000107058,
+      "p99_ms": 121.08090000037919,
+      "mean_ms": 29.98,
+      "n_latencies": 100,
+      "throughput_req_s": 142.65
+    },
+    {
+      "label": "retrieval=off c=10",
+      "requests_200": 200,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 35.22009999869624,
+      "p95_ms": 186.4108000008855,
+      "p99_ms": 285.4735000000801,
+      "mean_ms": 54.17,
+      "n_latencies": 200,
+      "throughput_req_s": 158.26
+    },
+    {
+      "label": "retrieval=off c=25",
+      "requests_200": 500,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 98.11470000022382,
+      "p95_ms": 172.38580000048387,
+      "p99_ms": 902.6417000004585,
+      "mean_ms": 130.41,
+      "n_latencies": 500,
+      "throughput_req_s": 162.34
+    },
+    {
+      "label": "burst limit=30/min, 60 requests",
+      "requests_200": 30,
+      "requests_429": 30,
+      "requests_error": 0,
+      "p50_ms": 4728.551000000152,
+      "p95_ms": 5315.441599999758,
+      "p99_ms": 5367.318200000227,
+      "mean_ms": 2621.34,
+      "n_latencies": 60,
+      "throughput_req_s": 10.56
+    },
+    {
+      "label": "e2e real LLM (n=10 sequential)",
+      "requests_200": 10,
+      "requests_429": 0,
+      "requests_error": 0,
+      "p50_ms": 2494.0924999991694,
+      "p95_ms": 77894.4403000005,
+      "p99_ms": 77894.4403000005,
+      "mean_ms": 10191.31,
+      "n_latencies": 10
+    }
+  ]
+}

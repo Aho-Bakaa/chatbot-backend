@@ -1,5 +1,11 @@
 fastapi
 uvicorn[standard]
-google-generativeai
+openai
+pydantic-settings
 python-dotenv
+sentence-transformers
+chromadb
 bs4
+httpx
+pytest
+pytest-asyncio
