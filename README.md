@@ -1,6 +1,6 @@
 # Virtual Lab AI — RAG-grounded lab assistant
 
-A FastAPI backend for the **Virtual Labs IIT Roorkee** chat assistant ("Virtual Lab AI"). It wraps a reasoning LLM on Groq (`openai/gpt-oss-120b`) with a retrieval-grounded domain guardrail, and ships with a reproducible evaluation harness and load benchmarks.
+A FastAPI backend for the **Virtual Labs IIT Roorkee** chat assistant ("Virtual Lab AI"). It wraps a reasoning LLM on Groq with a retrieval-grounded domain guardrail, and ships with a reproducible evaluation harness and load benchmarks.
 
 This project began as "a prompt wrapped around an API call" and has been upgraded into a small LLM-systems project: real grounding, real evals, real benchmarks, tests, and CI. Every number in `BENCHMARKS.md` was produced by running the scripts in this repo.
 
