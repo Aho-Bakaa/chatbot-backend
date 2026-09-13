@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "description": "Extraction / question-generation test set: 12 experiment aims drawn from typical Virtual Labs experiments (electronics, optics, mechanics, fluids, materials).",
+    "n_aims": 12,
+    "num_phrases": 5,
+    "num_questions_per_phrase": 3
+  },
+  "aims": [
+    {"id": "a01", "aim": "To study the characteristics of a common-emitter amplifier and determine its voltage gain, input impedance, and output impedance as a function of frequency."},
+    {"id": "a02", "aim": "To verify Ohm's law and determine the resistance of a given wire using a voltmeter and ammeter."},
+    {"id": "a03", "aim": "To determine the wavelength of sodium light using Newton's rings apparatus."},
+    {"id": "a04", "aim": "To measure the acceleration due to gravity using a compound pendulum."},
+    {"id": "a05", "aim": "To study the V-I characteristics of a PN junction diode in forward and reverse bias."},
+    {"id": "a06", "aim": "To determine the coefficient of viscosity of water by Poiseuille's method using a capillary tube."},
+    {"id": "a07", "aim": "To verify the laws of series and parallel combination of resistors using a multimeter."},
+    {"id": "a08", "aim": "To study the Hall effect in a semiconductor and determine the Hall coefficient and carrier concentration."},
+    {"id": "a09", "aim": "To calibrate a thermocouple and use it to determine unknown temperatures."},
+    {"id": "a10", "aim": "To determine the Young's modulus of a wire using Searle's apparatus."},
+    {"id": "a11", "aim": "To study the frequency response of a low-pass RC filter and determine its cutoff frequency."},
+    {"id": "a12", "aim": "To determine the magnetic susceptibility of a paramagnetic salt using Quincke's method."}
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "description": "Retrieval quality test set: 18 queries with gold chunk ids from app/rag/corpus.py. Gold chunks contain the information needed to answer the query.",
+    "n_queries": 18,
+    "top_k": 3
+  },
+  "mock_mode": false,
+  "summary": {
+    "n_queries": 18,
+    "top_k": 3,
+    "hit_rate_at_k": 0.9444,
+    "hit_count": 17,
+    "mrr": 0.9167,
+    "mean_top1_score": 0.7602
+  },
+  "groundedness": {
+    "n_queries": 18,
+    "groundedness": 1.0,
+    "supported_count": 18
+  },
+  "results": [
+    {
+      "id": "r01",
+      "query": "What should I wear in the lab?",
+      "gold_chunks": [
+        "ppe"
+      ],
+      "retrieved": [
+        "ppe",
+        "first-aid",
+        "fume-hood"
+      ],
+      "scores": [
+        0.7281,
+        0.6379,
+        0.6031
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r02",
+      "query": "How do I dilute concentrated sulfuric acid?",
+      "gold_chunks": [
+        "acid-base"
+      ],
+      "retrieved": [
+        "acid-base",
+        "chemical-spills",
+        "titration"
+      ],
+      "scores": [
+        0.7553,
+        0.638,
+        0.6001
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r03",
+      "query": "What do I do if acid splashes in my eye?",
+      "gold_chunks": [
+        "eyewash-shower"
+      ],
+      "retrieved": [
+        "eyewash-shower",
+        "acid-base",
+        "chemical-spills"
+      ],
+      "scores": [
+        0.7697,
+        0.6826,
+        0.64
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r04",
+      "query": "How do I extinguish a paper fire in the lab?",
+      "gold_chunks": [
+        "fire-safety"
+      ],
+      "retrieved": [
+        "first-aid",
+        "fire-safety",
+        "chemical-spills"
+      ],
+      "scores": [
+        0.7012,
+        0.6987,
+        0.6846
+      ],
+      "hit": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "r05",
+      "query": "What are the sections of an SDS?",
+      "gold_chunks": [
+        "sds"
+      ],
+      "retrieved": [
+        "sds",
+        "chemical-hygiene-plan",
+        "ppe"
+      ],
+      "scores": [
+        0.7467,
+        0.5021,
+        0.4871
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r06",
+      "query": "How do I dispose of broken beakers?",
+      "gold_chunks": [
+        "glassware"
+      ],
+      "retrieved": [
+        "glassware",
+        "waste-disposal",
+        "chemical-spills"
+      ],
+      "scores": [
+        0.6558,
+        0.6323,
+        0.618
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r07",
+      "query": "How long do I autoclave waste for sterilization?",
+      "gold_chunks": [
+        "autoclave"
+      ],
+      "retrieved": [
+        "autoclave",
+        "waste-disposal",
+        "eyewash-shower"
+      ],
+      "scores": [
+        0.8208,
+        0.6667,
+        0.6227
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r08",
+      "query": "How do I balance the centrifuge before a run?",
+      "gold_chunks": [
+        "centrifuge"
+      ],
+      "retrieved": [
+        "centrifuge",
+        "electrical-safety",
+        "bunsen-burner"
+      ],
+      "scores": [
+        0.7623,
+        0.6047,
+        0.5947
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r09",
+      "query": "Can I wear sandals in the lab?",
+      "gold_chunks": [
+        "ppe"
+      ],
+      "retrieved": [
+        "ppe",
+        "laser-safety",
+        "first-aid"
+      ],
+      "scores": [
+        0.7001,
+        0.5793,
+        0.5666
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r10",
+      "query": "Where should volatile solvents be handled?",
+      "gold_chunks": [
+        "fume-hood"
+      ],
+      "retrieved": [
+        "acid-base",
+        "gas-cylinders",
+        "chemical-spills"
+      ],
+      "scores": [
+        0.6733,
+        0.6576,
+        0.6521
+      ],
+      "hit": false,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "r11",
+      "query": "How do I store hydrogen gas cylinders?",
+      "gold_chunks": [
+        "gas-cylinders"
+      ],
+      "retrieved": [
+        "gas-cylinders",
+        "waste-disposal",
+        "fume-hood"
+      ],
+      "scores": [
+        0.7985,
+        0.6115,
+        0.6044
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r12",
+      "query": "What temperature does a soldering iron reach?",
+      "gold_chunks": [
+        "soldering"
+      ],
+      "retrieved": [
+        "soldering",
+        "autoclave",
+        "bunsen-burner"
+      ],
+      "scores": [
+        0.8232,
+        0.6353,
+        0.5995
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r13",
+      "query": "Which laser class can burn skin?",
+      "gold_chunks": [
+        "laser-safety"
+      ],
+      "retrieved": [
+        "laser-safety",
+        "fire-safety",
+        "first-aid"
+      ],
+      "scores": [
+        0.7911,
+        0.6305,
+        0.5669
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r14",
+      "query": "How do I clean an oil immersion microscope lens?",
+      "gold_chunks": [
+        "microscope"
+      ],
+      "retrieved": [
+        "microscope",
+        "chemical-spills",
+        "eyewash-shower"
+      ],
+      "scores": [
+        0.8412,
+        0.6424,
+        0.6334
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r15",
+      "query": "How do I clean up a small acid spill?",
+      "gold_chunks": [
+        "chemical-spills",
+        "acid-base"
+      ],
+      "retrieved": [
+        "chemical-spills",
+        "acid-base",
+        "eyewash-shower"
+      ],
+      "scores": [
+        0.8231,
+        0.7219,
+        0.6743
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r16",
+      "query": "Where should chemical waste go after an experiment?",
+      "gold_chunks": [
+        "waste-disposal"
+      ],
+      "retrieved": [
+        "waste-disposal",
+        "chemical-spills",
+        "acid-base"
+      ],
+      "scores": [
+        0.724,
+        0.7028,
+        0.6264
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r17",
+      "query": "How do I start a titration?",
+      "gold_chunks": [
+        "titration"
+      ],
+      "retrieved": [
+        "titration",
+        "electrical-safety",
+        "microscope"
+      ],
+      "scores": [
+        0.7858,
+        0.5494,
+        0.5452
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "r18",
+      "query": "What do I do for a thermal burn in the lab?",
+      "gold_chunks": [
+        "first-aid"
+      ],
+      "retrieved": [
+        "first-aid",
+        "soldering",
+        "bunsen-burner"
+      ],
+      "scores": [
+        0.7834,
+        0.6582,
+        0.6308
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0
+    }
+  ],
+  "groundedness_rows": [
+    {
+      "id": "r01",
+      "query": "What should I wear in the lab?",
+      "answer": "**Minimum personal protective equipment (PPE) for a teaching or research laboratory**\n\n| Item | Requirement | Notes |\n|------|-------------|-------|\n| **Eye protection** | Safety goggles (or a full‑face shield) – **not** just prescription glasses. | Required whenever there is any splash or aerosol hazard. If you wear contact lenses, goggles are still mandatory. |\n| **Body protection** | Laboratory coat (preferably flame‑resistant) that fully covers torso and arms. | Must be worn over regular clothing; sleeves should be long enough to reach the wrists. |\n| **Hand protection** | Chemically‑resistant gloves selected for the specific chemicals you are handling. | Remove gloves before touching phones, door handles, keyboards, etc., and wash hands afterward. Gloves are **not** a substitute for hand‑washing. |\n| **Footwear** | Closed‑toe, closed‑heel shoes (e.g., leather or sturdy synthetic). | Open‑toed shoes, sandals, or high‑top sneakers are prohibited. |\n| **Clothing** | No shorts, skirts, or loose garments that could catch fire or become contaminated. | Long pants and fitted sleeves are recommended. |\n| **Additional** | If the experiment involves high‑temperature or high‑pressure equipment, consider heat‑resistant gloves or face shields as dictated by the risk assessment. | PPE is the **last line of defense** after engineering controls (e.g., fume hoods) and procedural controls (e.g., substitution, elimination). |\n\n**Summary:** In a typical lab you should wear safety goggles, a lab coat, chemically‑resistant gloves appropriate to the reagents, closed‑toe shoes, and fully covering, non‑loose clothing. Follow any additional PPE requirements indicated in the experiment’s safety data sheet (SDS) or institutional SOPs.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r02",
+      "query": "How do I dilute concentrated sulfuric acid?",
+      "answer": "**Diluting Concentrated Sulfuric Acid (H₂SO₄, ≥ 95 %)**\n\n1. **Prepare the work area**  \n   - Work in a certified chemical fume hood.  \n   - Wear appropriate PPE: acid‑resistant lab coat, chemical‑impermeable gloves (nitrile or neoprene), face shield or goggles, and closed‑toe shoes.  \n   - Have a heat‑resistant container (e.g., Pyrex or PTFE beaker) and a magnetic stir bar ready. Keep a spill‑kit and an emergency‑wash station nearby.\n\n2. **Calculate the required volume**  \n   - Use \\(C_1V_1 = C_2V_2\\) to determine the volume of concentrate (\\(V_1\\)) needed for the desired final concentration (\\(C_2\\)) and total volume (\\(V_2\\)).  \n   - Example: To make 1 L of 1 M H₂SO₄ from 18 M stock, \\(V_1 = \\frac{C_2V_2}{C_1}= \\frac{1\\ \\text{mol L}^{-1}\\times 1\\ \\text{L}}{18\\ \\text{mol L}^{-1}}≈55.6\\ \\text{mL}\\).\n\n3. **Add acid to water (never the reverse)**  \n   - Measure the **required volume of distilled or deionized water** into the heat‑resistant container (e.g., 944 mL for the example above).  \n   - Place the container on a magnetic stir plate and start gentle stirring.\n\n4. **Slowly add the acid**  \n   - Using a graduated cylinder or a pipette, **add the concentrated H₂SO₄ dropwise** to the stirring water.  \n   - Do **not** pour the water into the acid; the exothermic dilution can cause violent boiling and splashing if done the other way around.\n\n5. **Control temperature**  \n   - The dilution of H₂SO₄ releases a large amount of heat (≈ -880 kJ mol⁻¹).  \n   - If the solution becomes hot (> 50 °C), pause the addition and allow it to cool, or place the beaker in an ice bath.  \n   - Do **not** attempt to cool the acid before dilution; the heat is generated *during* mixing.\n\n6. **Complete the dilution**  \n   - After all acid has been added, continue stirring for at least 1–2 min to ensure uniform temperature and concentration.  \n   - Verify the final volume (add water to reach the exact target volume if necessary) and label the solution with concentration, date, and hazard warnings.\n\n7. **Post‑dilution safety**  \n   - Store the diluted acid in a compatible, clearly labeled container (e.g., HDPE or glass) with a tight‑fitting cap.  \n   - Dispose of any waste according to institutional hazardous‑waste procedures.  \n   - If any splatter contacts skin, flush the area with copious water for **≥ 15 min** (per the acid‑base passage) and seek medical attention.\n\n**Key safety principle (from the provided context):** *Always add acid to water, never water to acid.* This prevents violent boiling and splashing, especially critical for highly exothermic acids like sulfuric acid.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r03",
+      "query": "What do I do if acid splashes in my eye?",
+      "answer": "**Immediate response to an acid splash in the eye**\n\n1. **Go to the nearest eyewash station immediately** – do not delay to locate goggles or other equipment.  \n2. **Activate the eyewash flow** and position your head so that the water streams over both eyes.  \n3. **Hold the eyelids open with your fingers** (including the lower and upper lids) to ensure full flushing of the ocular surface.  \n4. **Flush continuously for **≥ 15 minutes**.** The prolonged flow dilutes and removes the acid; the mechanical action will also dislodge contact lenses, so do **not** stop to remove them first.  \n5. **Remove contaminated clothing** if any acid has also contacted the face or neck, using the safety shower if a larger body splash occurred.  \n6. **Report the incident** to your instructor, supervisor, or safety officer as soon as the flushing is complete.  \n7. **Seek medical evaluation** even if you feel fine after flushing; ocular tissue can be damaged beyond immediate sensation.\n\n*Note:* Eyewash and safety‑shower stations are inspected weekly for proper water flow; ensure the unit is functioning before use if possible, but never postpone flushing for verification.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r04",
+      "query": "How do I extinguish a paper fire in the lab?",
+      "answer": "To put out a paper fire (a Class A fire) follow these steps:\n\n1. **Assess the size** – If the fire is larger than a waste‑basket, evacuate, close the door, pull the fire alarm, and call for help. Do not attempt to fight it.\n\n2. **Grab the correct extinguisher** – Use a Class A (water‑mist or dry‑chemical) extinguisher. Verify it is rated for ordinary combustibles.\n\n3. **Apply the PASS technique**  \n   - **P**ull the safety pin.  \n   - **A**im the nozzle at the **base** of the flames, not the top.  \n   - **S**queeze the handle to release the extinguishing agent.  \n   - **S**weep the stream side‑to‑side, moving it across the fire until it is fully out and no hot spots remain.\n\n4. **Ventilate** – Once the fire is out, open a window or use the lab’s exhaust to clear any smoke.\n\n5. **Report** – Notify the instructor or supervisor, log the incident, and ensure the area is inspected before resuming work.\n\nAlways keep the two nearest exits and the assembly point in mind before starting any experiment.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r05",
+      "query": "What are the sections of an SDS?",
+      "answer": "An SDS (Safety Data Sheet) is standardized into **16 sections**:\n\n1. **Identification** – product name, manufacturer, recommended uses, contact information.  \n2. **Hazard Identification** – signal word, hazard statements, pictograms, classification.  \n3. **Composition / Information on Ingredients** – chemical identity, CAS numbers, concentration ranges.  \n4. **First‑Aid Measures** – required medical treatment for different exposure routes.  \n5. **Fire‑Fighting Measures** – suitable extinguishing media, special hazards, protective equipment.  \n6. **Accidental Release Measures** – containment, cleanup procedures, environmental precautions.  \n7. **Handling and Storage** – safe handling practices, storage conditions, incompatibilities.  \n8. **Exposure Controls / Personal Protection** – occupational exposure limits, engineering controls, PPE requirements.  \n9. **Physical and Chemical Properties** – appearance, odor, pH, boiling point, flash point, etc.  \n10. **Stability and Reactivity** – chemical stability, possible hazardous reactions, incompatibilities.  \n11. **Toxicological Information** – acute and chronic health effects, routes of exposure, symptoms.  \n12. **Ecological Information** – environmental fate, toxicity to aquatic life, biodegradability.  \n13. **Disposal Considerations** – waste handling, disposal methods, regulatory requirements.  \n14. **Transport Information** – UN number, shipping class, packing group, transport regulations.  \n15. **Regulatory Information** – safety, health, and environmental regulations specific to the product.  \n16. **Other Information** – date of preparation or last revision, additional notes.  \n\nThese sections provide a comprehensive overview of a chemical’s hazards, safe handling, and regulatory compliance.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r06",
+      "query": "How do I dispose of broken beakers?",
+      "answer": "Broken glassware, such as cracked or shattered beakers, must be treated as **sharps**:\n\n1. **Do not handle with bare hands.**  \n   - Use a brush and dustpan (or tongs) to sweep the pieces onto a puncture‑resistant container.  \n   - If you must touch the glass, wear cut‑resistant gloves and protect your hands with a towel.\n\n2. **Place the debris in a dedicated sharps/​puncture‑resistant container.**  \n   - These containers are usually labeled “Broken Glass” or “Sharps – Glass.”  \n   - Keep the container closed except when adding material.\n\n3. **Segregate from other waste streams.**  \n   - Do **not** mix broken glass with chemical waste, biological waste, or regular trash.  \n   - The container should be stored in the designated waste‑collection area until it is removed by the hazardous‑waste service.\n\n4. **Report the incident.**  \n   - Notify the lab supervisor or safety officer so the container can be replaced and the spill (if any) can be documented.\n\nFollowing these steps ensures compliance with the lab’s waste‑disposal policy and minimizes the risk of injury or secondary contamination.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r07",
+      "query": "How long do I autoclave waste for sterilization?",
+      "answer": "Autoclave cycles are typically run at 121 °C (250 °F) and 15 psi for a **validated hold time of 15 – 30 minutes**, chosen according to the size and nature of the load. Larger or denser loads generally require the longer end of that range, while smaller, loosely packed loads can be sterilized safely in the shorter time. Always confirm the specific hold time for your waste type in the lab’s SOP and verify the cycle with chemical or biological indicators.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r08",
+      "query": "How do I balance the centrifuge before a run?",
+      "answer": "**Balancing a centrifuge rotor**\n\n1. **Select the correct rotor** – Verify that the rotor type (fixed‑angle, swing‑bucket, etc.) matches the tube size and material you will use.  \n\n2. **Weigh each tube** – Before loading, weigh every sample tube (including caps) on an analytical balance (±0.01 g). Record the mass.\n\n3. **Pair opposite tubes** – Place tubes of **equal mass** directly opposite each other in the rotor slots (180° apart). This creates a symmetric load and eliminates radial imbalance.\n\n4. **Use a balance tube for odd numbers**  \n   - If you have an odd number of samples, add a **balance tube** (empty tube or tube filled with water) that matches the mass of the unpaired sample.  \n   - Position this balance tube opposite the lone sample.\n\n5. **Check total rotor balance** – After loading, gently rotate the rotor by hand (if the design permits) and feel for any wobble. A well‑balanced rotor will rotate smoothly without a noticeable “walking” motion.\n\n6. **Secure the lid** – Close the centrifuge lid and engage any safety interlocks before starting the run.\n\n7. **Monitor the first few seconds** – Observe the instrument for unusual vibration or noise. If any occurs, stop the run immediately, re‑balance, and report the issue.\n\n**Quick checklist**\n\n- [ ] Tubes weighed and masses recorded  \n- [ ] Equal‑mass tubes placed opposite each other  \n- [ ] Balance tube added when needed  \n- [ ] Rotor and tubes compatible with selected speed (RPM/RCF)  \n- [ ] No cracked or damaged tubes (inspect visually)  \n- [ ] Lid locked, safety interlocks engaged  \n\nFollowing these steps ensures the rotor remains balanced, preventing mechanical damage and maintaining sample integrity.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r09",
+      "query": "Can I wear sandals in the lab?",
+      "answer": "No. Open‑toed footwear such as sandals is prohibited in a teaching or research laboratory. The minimum PPE requirements state that **open‑toed shoes, shorts, and loose clothing are not permitted** because they expose the feet to chemical splashes, hot liquids, broken glass, and other hazards. Wear closed, chemically resistant shoes (e.g., leather or nitrile‑coated safety shoes) that fully cover the foot and provide a solid barrier against spills and impacts.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r10",
+      "query": "Where should volatile solvents be handled?",
+      "answer": "Volatile solvents should be manipulated inside a **fume hood** (or other local exhaust ventilation system) to contain vapors and protect personnel.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r11",
+      "query": "How do I store hydrogen gas cylinders?",
+      "answer": "Hydrogen cylinders should be handled like any other compressed gas cylinder, with extra attention to its flammability:\n\n1. **Orientation & Securing**  \n   - Store the cylinder **upright** on a stable surface.  \n   - Secure it with a **chain, strap, or cylinder‑cart tie‑down** to prevent tipping or rolling.\n\n2. **Valve Protection**  \n   - Keep the **valve cap on** when the cylinder is not in use.  \n   - Use a **hydrogen‑compatible regulator** (often a low‑pressure regulator with a flame‑arrestor) before opening the valve.\n\n3. **Separation from Ignition Sources**  \n   - Place hydrogen cylinders **away from oxidizers, open flames, sparks, and hot surfaces**.  \n   - Maintain a clear buffer zone (≥ 1 m) from combustible materials and electrical equipment.\n\n4. **Ventilation & Storage Area**  \n   - Store in a **well‑ventilated, designated gas‑cylinder area** that complies with local fire‑code requirements.  \n   - Avoid confined spaces where leaked hydrogen could accumulate.\n\n5. **Leak Management**  \n   - If a leak is suspected, **evacuate the area**, **close the valve** (if safe to do so), and **report** the incident immediately.  \n   - Do **not attempt to repair** the cylinder or its valve yourself.\n\n6. **Handling Precautions**  \n   - Use a **cylinder cart** or trolley; never drag, drop, or roll the cylinder.  \n   - When opening the valve, **stand to the side** of the regulator (not directly in front) and open it **slowly**.\n\nFollowing these practices keeps hydrogen cylinders secure, minimizes fire/explosion risk, and complies with standard laboratory safety protocols.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r12",
+      "query": "What temperature does a soldering iron reach?",
+      "answer": "Soldering irons typically operate in the **300 °C to 400 °C** range.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r13",
+      "query": "Which laser class can burn skin?",
+      "answer": "Class 4 lasers are capable of burning skin (as well as igniting materials).",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r14",
+      "query": "How do I clean an oil immersion microscope lens?",
+      "answer": "**Cleaning an oil‑immersion (100 ×) objective lens**\n\n1. **Remove excess oil** – Immediately after the observation, use a clean piece of **lens‑paper** (or a lint‑free microfiber wipe designed for optics) to gently blot the front of the oil‑immersion lens. Do **not** use paper towels or water, as they can leave fibers or cause scratches.\n\n2. **Apply lens cleaner** – Dampen a fresh portion of the lens‑paper with a small amount of **optical‑grade lens cleaner** (e.g., a solvent such as isopropyl alcohol ≤ 70 % or a commercial microscope lens‑cleaning solution). Avoid saturating the paper; a barely moist surface is sufficient.\n\n3. **Wipe in a circular motion** – Starting at the center of the objective, gently wipe outward in a **circular, low‑pressure motion** to lift residual oil. Use a fresh section of the paper for each pass to prevent redepositing oil.\n\n4. **Inspect the lens** – Hold the objective under a bright light and view it at a low magnification to verify that no streaks or smears remain. If any residue persists, repeat steps 2–3 with a fresh piece of lens‑paper.\n\n5. **Dry and protect** – Allow the lens to air‑dry for a few seconds (the solvent evaporates quickly). Immediately place the objective back into its **protective cap** or storage sleeve to prevent dust accumulation.\n\n**Key points from the safety context**\n\n- **Only lens paper and lens cleaner** may be used; never paper towels or water.  \n- **Wipe immediately** after use; oil left on the lens can harden and become difficult to remove.  \n- **Cover the objective** when stored to protect it from contaminants.\n\nFollowing these steps preserves the optical quality of the oil‑immersion lens and prevents damage to both the objective and the specimen slides.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r15",
+      "query": "How do I clean up a small acid spill?",
+      "answer": "**Cleaning up a small acid spill**\n\n1. **Secure the area**  \n   - Alert anyone nearby that an acid spill has occurred.  \n   - If vapors are noticeable (e.g., strong odor, visible fumes), activate the fume hood or evacuate the immediate area and notify the instructor/safety officer.\n\n2. **Don appropriate PPE**  \n   - Chemical‑resistant gloves (nitrile or neoprene), lab coat, safety goggles, and closed‑toe shoes.  \n   - If the acid is volatile, work inside a fume hood.\n\n3. **Contain the spill**  \n   - Use the lab’s spill kit to place an absorbent barrier (e.g., spill‑pad, vermiculite) around the perimeter of the spill to prevent spreading.\n\n4. **Absorb the liquid**  \n   - Apply an **inert absorbent material** (the spill‑kit’s acid‑compatible pads or vermiculite).  \n   - Do **not** use ordinary paper towels unless they have been pre‑treated with a neutralizing agent, as paper can react with acid and generate heat.\n\n5. **Neutralize (if approved by your lab’s SOP)**  \n   - For low‑toxicity, low‑concentration acids, the spill kit may contain a **neutralizing agent** (e.g., sodium bicarbonate granules).  \n   - Sprinkle the neutralizer gently over the absorbed acid, allowing it to react fully.  \n   - Verify neutralization with pH paper (target pH ≈ 7).  \n   - **Do not** attempt to neutralize a spill that is on skin or clothing—flush with water instead.\n\n6. **Collect the residue**  \n   - Using a scoop or tongs, place the saturated absorbent and any neutralized material into a **hazardous‑waste container** labeled for acidic waste.  \n   - Seal the container securely.\n\n7. **Decontaminate the work surface**  \n   - Rinse the area with copious water (≥ 1 L per 10 cm²) while maintaining the absorbent barrier to carry away any residual acid.  \n   - Dry the surface with a clean, non‑reactive wipe.\n\n8. **Disposal and reporting**  \n   - Label the waste container with the acid type, concentration, and date, then store it for collection by the hazardous‑waste service.  \n   - Complete the required **spill report** (including volume, acid identity, and any injuries) as stipulated by your institution’s safety protocol.\n\n9. **Post‑cleanup check**  \n   - Verify that the eyewash/shower stations and spill‑kit supplies are replenished.  \n   - Inspect PPE for damage and replace if necessary.\n\n**Key safety notes from the reference material**  \n- *Never* use plain paper towels on acid spills without a neutralizing agent.  \n- Small spills must still be **reported**, even if they appear fully cleaned.  \n- If any acid contacts skin, flush the area with **copious water for at least 15 minutes**; do not attempt neutralization on the body.  \n\nFollowing these steps ensures the spill is contained, neutralized (when appropriate), and disposed of safely while minimizing risk to personnel and the laboratory environment.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r16",
+      "query": "Where should chemical waste go after an experiment?",
+      "answer": "Chemical waste should be transferred immediately to a **properly labeled, compatible waste container** (e.g., a dedicated solvent waste bottle or acid waste drum). Use a container that matches the waste’s chemical class (halogenated vs. non‑halogenated solvents, acids vs. bases, oxidizers, etc.) and keep it closed except when adding waste. Do **not** pour the waste down the sink unless the lab’s written procedure explicitly allows it, and never mix incompatible wastes (e.g., acids with bases or oxidizers with organics).",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r17",
+      "query": "How do I start a titration?",
+      "answer": "**Starting a titration – step‑by‑step**\n\n1. **Prepare the apparatus**  \n   - Clean the burette, pipette, and conical (Erlenmeyer) flask. Rinse the burette thoroughly with the *titrant* (the standard solution) to avoid dilution errors.  \n   - Mount the burette on a stand, secure the stopcock, and ensure the tip is free of cracks.\n\n2. **Fill the burette**  \n   - Using a funnel, fill the burette past the zero mark (typically to ~1 mL above the 0.00 mL graduation).  \n   - Open the stopcock briefly to let a few drops flow through the tip; this removes trapped air bubbles that would cause volume‑reading errors.\n\n3. **Record the initial volume**  \n   - Remove the funnel, wipe the outside of the burette tip with a lint‑free tissue, and read the meniscus at eye level. Record the initial burette reading to **0.01 mL** precision.\n\n4. **Prepare the analyte (sample) flask**  \n   - Pipette the measured volume of the unknown solution into the conical flask.  \n   - Add the appropriate indicator (e.g., phenolphthalein for acid–base titrations) – a few drops are sufficient. Swirl to mix.\n\n5. **Titrate**  \n   - Place the flask on a magnetic stir plate (or swirl manually).  \n   - Add titrant **dropwise** from the burette, especially as you approach the expected endpoint.  \n   - Continuously swirl the flask to ensure complete mixing.\n\n6. **Detect the endpoint**  \n   - Watch for the *first permanent* color change of the indicator (the endpoint). Once the color persists for ~30 s, stop adding titrant.\n\n7. **Record the final volume**  \n   - Read the burette meniscus again (to 0.01 mL) and record the final volume.  \n   - Calculate the volume of titrant used: *V = final – initial*.\n\n8. **Repeat for reproducibility**  \n   - Perform the titration at least **two more times** (total ≥ 3 trials) using fresh aliquots of the analyte. The results should agree within the desired precision; otherwise, troubleshoot (e.g., check indicator, mixing, or burette leaks).\n\n**Key points from the safety/technique context**\n\n- **Air bubbles** in the burette tip are a common source of error; always expel them before starting.  \n- **Indicator choice** must correspond to the reaction’s pH range.  \n- **Consistent technique** (same drop rate, same swirling) improves reproducibility.  \n\nFollowing these steps will give you accurate, repeatable titration data.",
+      "judge_raw": "YES",
+      "supported": true
+    },
+    {
+      "id": "r18",
+      "query": "What do I do for a thermal burn in the lab?",
+      "answer": "**Thermal‑burn first‑aid in the laboratory**\n\n1. **Cool the burn immediately**  \n   - Place the affected area under a gentle stream of cool (not ice‑cold) running water.  \n   - Continue cooling for **10–20 minutes** to halt heat propagation and reduce tissue damage.\n\n2. **Avoid harmful interventions**  \n   - Do **not** apply ice, ointments, butter, or adhesive dressings, especially on moderate‑to‑severe burns.  \n   - Do not pop blisters or attempt to “seal” the wound.\n\n3. **Protect the area**  \n   - After cooling, loosely cover the burn with a clean, non‑adhesive dressing or sterile gauze to keep it clean and prevent contamination.\n\n4. **Seek medical evaluation**  \n   - For burns larger than the size of the palm, deep (third‑degree) burns, or burns on the face, hands, feet, genitals, or over joints, obtain professional medical care promptly.\n\n5. **Report the incident**  \n   - Notify the lab instructor or supervisor immediately.  \n   - Record the event in the lab’s incident log as required by safety policy.\n\n6. **Post‑incident follow‑up**  \n   - Review the cause of the burn (e.g., hot plate, Bunsen burner, soldering iron) and implement corrective actions to prevent recurrence (e.g., use heat‑resistant gloves, improve shielding, reinforce safe‑handling procedures).",
+      "judge_raw": "YES",
+      "supported": true
+    }
+  ]
+}
