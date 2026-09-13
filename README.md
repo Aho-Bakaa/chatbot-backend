@@ -1,6 +1,6 @@
 # Virtual Lab AI — RAG-grounded lab assistant
 
-A FastAPI backend for the **Virtual Labs IIT Roorkee** chat assistant ("Virtual Lab AI"). It wraps a reasoning LLM on Groq (`openai/gpt-oss-120b`, OpenAI-compatible API) with a retrieval-grounded domain guardrail, and ships with a reproducible evaluation harness and load benchmarks.
+A FastAPI backend for the **Virtual Labs IIT Roorkee** chat assistant ("Virtual Lab AI"). It wraps a reasoning LLM on Groq (`openai/gpt-oss-120b`) with a retrieval-grounded domain guardrail, and ships with a reproducible evaluation harness and load benchmarks.
 
 This project began as "a prompt wrapped around an API call" and has been upgraded into a small LLM-systems project: real grounding, real evals, real benchmarks, tests, and CI. Every number in `BENCHMARKS.md` was produced by running the scripts in this repo.
 
@@ -43,7 +43,7 @@ LLM (Groq, openai/gpt-oss-120b) ──► response
 ```
 app/
   main.py               # FastAPI app, endpoints, middleware, logging
-  config.py             # pydantic-settings (env-driven, .env supported)
+  config.py             # pydantic-settings 
   prompts.py            # prompt constants (single source of truth)
   rate_limiter.py       # sliding-window limiter
   logging_config.py     # structured JSON logging
@@ -52,7 +52,7 @@ app/
     store.py            # embeddings + Chroma retrieval
     build_index.py      # CLI: rebuild the index
   services/
-    llm_client.py        # Groq (OpenAI-compatible) wrapper (DI-friendly for tests)
+    llm_client.py        # Groq wrapper
     extraction.py        # phrase extraction + question generation + fallback
 eval/                   # evaluation harness (data + runners + RESULTS.md)
 benchmarks/             # asyncio+httpx load/latency benchmark
@@ -91,4 +91,3 @@ Results: `eval/RESULTS.md` (raw per-query data in `eval/results/*.json`), `bench
 ## Credits
 
 - Corpus passages are condensed paraphrases of public lab-safety guidance (OSHA Laboratory Safety Guidance, National Research Council *Prudent Practices in the Laboratory*, ACS *Safety in Academic Chemistry Laboratories*, CDC/NIH BMBL, NFPA/ANSI fundamentals); each entry carries its source attribution in `app/rag/corpus.py`.
-- Virtual Labs IIT Roorkee is a Ministry of Education (Govt. of India) NME-ICT initiative providing simulation-based experiments to engineering and science students.
